@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string_functions.h"
+#include "includes/ft_string_functions.h"
 
 char	*ft_strnstr(const char *src, const char *search, size_t len);
 

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string_functions.h"
+#include "includes/ft_string_functions.h"
 
 char	*ft_strchr(const char *str, int c);
 

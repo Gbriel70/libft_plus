@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ctype.h"
+#include "includes/ft_ctype.h"
 
 int	ft_isprint(int a)
 {
