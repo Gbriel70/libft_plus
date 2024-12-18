@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/ft_string_functions.h"
+#include "ft_string_functions.h"
 
 int	ft_strncmp(const char *src, char *dest, size_t n);
 

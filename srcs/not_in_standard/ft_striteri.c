@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/not_in_standard_includes/not_in_standard.h"
+#include "not_in_standard_includes/not_in_standard.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 

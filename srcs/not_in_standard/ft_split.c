@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/not_in_standard_includes/not_in_standard.h"
+#include "not_in_standard_includes/not_in_standard.h"
 
 char			**ft_split(char const *s, char c);
 

@@ -2,7 +2,6 @@
 #		             	COLORS    		  			 #
 #****************************************************#
 
-
 RED                             := \033[0;31m
 GREEN                           := \033[0;32m
 YELLOW                          := \033[0;33m
@@ -14,13 +13,13 @@ RESET                           := \033[0m
 #		           		PATHS        		  		#
 #***************************************************#
 
-SRCS_FT_CTYPES_DIR				:= src/ft_ctype/
-SRCS_FT_LIST_FUNCTIONS_DIR		:= src/ft_list_functions/
-SRCS_FT_STDLIB_DIR				:= src/ft_stdlib/
-SRCS_FT_STRING_FUNCTIONS_DIR	:= src/ft_string_functions/
-SRC_NOT_IN_STANDARD_DIR			:= src/not_in_standard/
-SRC_GET_NEXT_LINE_DIR			:= $(FT_NOT_IN_STANDARD)/get_next_line/
-SRC_PRINTF_DIR					:= $(FT_NOT_IN_STANDARD)/ft_printf/
+SRCS_FT_CTYPES_DIR				:= srcs/ft_ctype/
+SRCS_FT_LIST_FUNCTIONS_DIR		:= srcs/ft_list_functions/
+SRCS_FT_STDLIB_DIR				:= srcs/ft_stdlib/
+SRCS_FT_STRING_FUNCTIONS_DIR	:= srcs/ft_string_functions/
+SRC_NOT_IN_STANDARD_DIR			:= srcs/not_in_standard/
+SRC_GET_NEXT_LINE_DIR			:= $(SRC_NOT_IN_STANDARD_DIR)/get_next_line/
+SRC_PRINTF_DIR					:= $(SRC_NOT_IN_STANDARD_DIR)/ft_printf/
 INCLUDES_DIR					:= includes/
 BUILD_DIR						:= build/
 
@@ -28,7 +27,7 @@ BUILD_DIR						:= build/
 #		           		COMANDS        		  		#
 #***************************************************#
 
-RM 				:= rm -f
+RM 				:= rm -rf
 MKDIR 			:= mkdir -p
 MAKEFLAGS 		+= --no-print-directory
 SLEEP			:= sleep 0.1
@@ -39,7 +38,7 @@ SLEEP			:= sleep 0.1
 
 NAME			:= libft.a
 
-SRCS_FILES += $(addprefix $(SRCS_FT_CTYPES_DIR),
+SRCS_FILES += $(addprefix $(SRCS_FT_CTYPES_DIR), \
 				ft_isalnum.c\
 				ft_isalpha.c\
 				ft_isascii.c\
@@ -48,7 +47,7 @@ SRCS_FILES += $(addprefix $(SRCS_FT_CTYPES_DIR),
 				ft_tolower.c\
 				ft_toupper.c)
 
-SRCS_FILES += $(addprefix $(SRCS_FT_LIST_FUNCTIONS_DIR), 
+SRCS_FILES += $(addprefix $(SRCS_FT_LIST_FUNCTIONS_DIR), \
 				ft_lstadd_back.c\
 				ft_lstadd_front.c\
 				ft_lstclear.c\
@@ -59,44 +58,44 @@ SRCS_FILES += $(addprefix $(SRCS_FT_LIST_FUNCTIONS_DIR),
 				ft_lstnew.c\
 				ft_lstsize.c)
 
-SRCS_FILES += $(addprefix $(SRCS_FT_STDLIB_DIR),
+SRCS_FILES += $(addprefix $(SRCS_FT_STDLIB_DIR), \
 				ft_atoi.c\
+				ft_calloc.c)
+
+SRCS_FILES += $(addprefix $(SRCS_FT_STRING_FUNCTIONS_DIR), \
 				ft_bzero.c\
-				ft_calloc.c\
-				ft_itoa.c\
-				ft_memccpy.c\
 				ft_memchr.c\
 				ft_memcmp.c\
 				ft_memcpy.c\
 				ft_memmove.c\
-				ft_memset.c)
-
-SRCS_FILES += $(addprefix $(SRCS_FT_STRING_FUNCTIONS_DIR),
-				ft_split.c\
+				ft_memset.c\
 				ft_strchr.c\
 				ft_strdup.c\
-				ft_strjoin.c\
 				ft_strlcat.c\
 				ft_strlcpy.c\
 				ft_strlen.c\
-				ft_strmapi.c\
 				ft_strncmp.c\
 				ft_strnstr.c\
-				ft_strrchr.c\
-				ft_strtrim.c\
-				ft_substr.c)
+				ft_strrchr.c)
 
-SRCS_FILES += $(addprefix $(SRC_NOT_IN_STANDARD_DIR),
+SRCS_FILES += $(addprefix $(SRC_NOT_IN_STANDARD_DIR), \
+				ft_itoa.c\
 				ft_putchar_fd.c\
 				ft_putendl_fd.c\
 				ft_putnbr_fd.c\
-				ft_putstr_fd.c)
+				ft_putstr_fd.c\
+				ft_split.c\
+				ft_striteri.c\
+				ft_strjoin.c\
+				ft_strmapi.c\
+				ft_strtrim.c\
+				ft_substr.c)
 
-SRCS_FILES += $(addprefix $(SRC_GET_NEXT_LINE_DIR),
+SRCS_FILES += $(addprefix $(SRC_GET_NEXT_LINE_DIR), \
 				get_next_line.c\
 				get_next_line_utils.c)
 
-SRCS_FILES += $(addprefix $(SRC_PRINTF_DIR),
+SRCS_FILES += $(addprefix $(SRC_PRINTF_DIR), \
 				ft_printf_bonus.c\
 				ft_printchar_and_str_bonus.c\
 				ft_print_number_ptr_bonus.c\

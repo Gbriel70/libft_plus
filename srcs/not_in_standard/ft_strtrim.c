@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/not_in_standard_includes/not_in_standard.h"
+#include "not_in_standard_includes/not_in_standard.h"
+#include "ft_string_functions.h"
 
 char	*ft_strtrim(char const *s1, char const *set);
 

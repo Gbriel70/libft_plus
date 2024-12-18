@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/not_in_standard_includes/not_in_standard.h"
+#include "not_in_standard_includes/not_in_standard.h"
+#include "ft_string_functions.h"
+#include "ft_stdlib.h"
 
 char			*ft_itoa(int n);
 

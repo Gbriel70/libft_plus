@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/ft_string_functions.h"
+#include "ft_string_functions.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t size);
 

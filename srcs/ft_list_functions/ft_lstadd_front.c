@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/ft_list_functions.h"
+#include "ft_list_functions.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new);
 
