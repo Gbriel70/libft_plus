@@ -19,7 +19,7 @@ SRCS_FT_STDLIB_DIR				:= srcs/ft_stdlib/
 SRCS_FT_STRING_FUNCTIONS_DIR	:= srcs/ft_string_functions/
 SRC_NOT_IN_STANDARD_DIR			:= srcs/not_in_standard/
 SRC_GET_NEXT_LINE_DIR			:= $(SRC_NOT_IN_STANDARD_DIR)/get_next_line/
-SRC_PRINTF_DIR					:= $(SRC_NOT_IN_STANDARD_DIR)/ft_printf/
+SRC_PRINTF_DIR					:= $(SRC_NOT_IN_STANDARD_DIR)/ft_printf_42/
 INCLUDES_DIR					:= includes/
 BUILD_DIR						:= build/
 
