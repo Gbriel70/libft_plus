@@ -89,7 +89,8 @@ SRCS_FILES += $(addprefix $(SRC_NOT_IN_STANDARD_DIR), \
 				ft_strjoin.c\
 				ft_strmapi.c\
 				ft_strtrim.c\
-				ft_substr.c)
+				ft_substr.c\
+				ft_swap.c)
 
 SRCS_FILES += $(addprefix $(SRC_GET_NEXT_LINE_DIR), \
 				get_next_line.c\
