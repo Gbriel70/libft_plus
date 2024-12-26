@@ -12,29 +12,6 @@
 
 #include "not_in_standard_includes/get_next_line.h"
 
-void	*ft_calloc(size_t num, size_t size)
-{
-	void			*list;
-	size_t			calloc_size;
-	unsigned char	*zero_list;
-	size_t			i;
-
-	if (num != 0 && size > SIZE_MAX / num)
-		return (NULL);
-	calloc_size = num * size;
-	list = malloc(calloc_size);
-	if (!list)
-		return (NULL);
-	i = 0;
-	zero_list = list;
-	while (i < calloc_size)
-	{
-		zero_list[i] = '\0';
-		i++;
-	}
-	return (zero_list);
-}
-
 t_line	*ft_lstnew(char *content)
 {
 	t_line	*new;

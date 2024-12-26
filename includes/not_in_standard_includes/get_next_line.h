@@ -22,6 +22,7 @@
 # include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "../ft_stdlib.h"
 
 typedef struct s_line
 {
