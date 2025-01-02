@@ -76,7 +76,8 @@ SRCS_FILES += $(addprefix $(SRCS_FT_STRING_FUNCTIONS_DIR), \
 				ft_strlen.c\
 				ft_strncmp.c\
 				ft_strnstr.c\
-				ft_strrchr.c)
+				ft_strrchr.c\
+				ft_str_remove_dup.c)
 
 SRCS_FILES += $(addprefix $(SRC_NOT_IN_STANDARD_DIR), \
 				ft_itoa.c\
