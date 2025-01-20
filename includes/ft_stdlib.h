@@ -18,5 +18,6 @@
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t num, size_t size);
+int     ft_atoi_base(const char *str, int str_base);
 
 #endif

@@ -60,7 +60,8 @@ SRCS_FILES += $(addprefix $(SRCS_FT_LIST_FUNCTIONS_DIR), \
 
 SRCS_FILES += $(addprefix $(SRCS_FT_STDLIB_DIR), \
 				ft_atoi.c\
-				ft_calloc.c)
+				ft_calloc.c\
+				ft_atoi_base.c)
 
 SRCS_FILES += $(addprefix $(SRCS_FT_STRING_FUNCTIONS_DIR), \
 				ft_bzero.c\
