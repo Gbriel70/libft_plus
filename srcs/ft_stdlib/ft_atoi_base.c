@@ -19,6 +19,8 @@ int	ft_atoi_base(const char *str, int str_base)
 			signal *= -1;
 		index++;
 	}
+	if (str_base == 16 && str[index] == '0' && (str[index + 1] == 'x' || str[index + 1] == 'X'))
+        index += 2;
 	while ((ft_validate(str[index], str_base)) != -1)
 	{
 		result *= str_base;
