@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi_base.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/17 14:03:52 by gcosta-m          #+#    #+#             */
+/*   Updated: 2025/02/17 14:04:39 by gcosta-m         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_stdlib.h"
 
 static int	ft_validate(char c, int base);
@@ -19,8 +31,9 @@ int	ft_atoi_base(const char *str, int str_base)
 			signal *= -1;
 		index++;
 	}
-	if (str_base == 16 && str[index] == '0' && (str[index + 1] == 'x' || str[index + 1] == 'X'))
-        index += 2;
+	if (str_base == 16 && str[index] == '0' && (str[index + 1] == 'x'
+			|| str[index + 1] == 'X'))
+		index += 2;
 	while ((ft_validate(str[index], str_base)) != -1)
 	{
 		result *= str_base;
@@ -32,9 +45,9 @@ int	ft_atoi_base(const char *str, int str_base)
 
 static int	ft_validate(char c, int base)
 {
-	char	*low_base;
-	char	*upper_base;
-	int		index;
+	char *low_base;
+	char *upper_base;
+	int index;
 
 	low_base = "0123456789abcdef";
 	upper_base = "0123456789ABCDEF";
