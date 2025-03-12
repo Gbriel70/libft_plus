@@ -20,6 +20,7 @@ SRCS_FT_STRING_FUNCTIONS_DIR	:= srcs/ft_string_functions/
 SRC_NOT_IN_STANDARD_DIR			:= srcs/not_in_standard/
 SRC_GET_NEXT_LINE_DIR			:= $(SRC_NOT_IN_STANDARD_DIR)/get_next_line/
 SRC_PRINTF_DIR					:= $(SRC_NOT_IN_STANDARD_DIR)/ft_printf_42/
+SRC_FT_GC 					  	:= $(SRC_NOT_IN_STANDARD_DIR)/ft_gc/
 INCLUDES_DIR					:= includes/
 BUILD_DIR						:= build/
 
@@ -103,6 +104,9 @@ SRCS_FILES += $(addprefix $(SRC_PRINTF_DIR), \
 				ft_printchar_and_str_bonus.c\
 				ft_print_number_ptr_bonus.c\
 				ft_putplus_space_and_sharp_bonus.c)
+
+SRCS_FILES += $(addprefix $(SRC_FT_GC), \
+				ft_gc.c)
 
 OBJECTS		:= $(SRCS_FILES:%.c=$(BUILD_DIR)%.o)
 
