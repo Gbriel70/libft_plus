@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 10:05:55 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/12/19 10:09:54 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2025/03/18 10:09:04 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ size_t	ft_strlen(const char *c);
 int		ft_strncmp(const char *src, char *dest, size_t n);
 char	*ft_strnstr(const char *src, const char *search, size_t len);
 char	*ft_strrchr(const char *str, int c);
-char    *ft_str_remove_dup(char *str, char c);
+char	*ft_str_remove_dup(char *str, char c);
 
 #endif

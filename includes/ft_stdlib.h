@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 10:05:59 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/12/19 10:09:50 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2025/03/18 10:08:51 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@
 
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t num, size_t size);
-int     ft_atoi_base(const char *str, int str_base);
+int		ft_atoi_base(const char *str, int str_base);
 
 #endif

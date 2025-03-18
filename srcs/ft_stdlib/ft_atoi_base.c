@@ -6,7 +6,7 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 14:03:52 by gcosta-m          #+#    #+#             */
-/*   Updated: 2025/02/17 14:04:39 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2025/03/18 10:10:28 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ int	ft_atoi_base(const char *str, int str_base)
 
 static int	ft_validate(char c, int base)
 {
-	char *low_base;
-	char *upper_base;
-	int index;
+	char	*low_base;
+	char	*upper_base;
+	int		index;
 
 	low_base = "0123456789abcdef";
 	upper_base = "0123456789ABCDEF";

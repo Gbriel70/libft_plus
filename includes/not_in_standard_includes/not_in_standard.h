@@ -6,15 +6,15 @@
 /*   By: gcosta-m <gcosta-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 10:06:06 by gcosta-m          #+#    #+#             */
-/*   Updated: 2024/12/19 10:10:08 by gcosta-m         ###   ########.fr       */
+/*   Updated: 2025/03/18 10:08:42 by gcosta-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef NOT_IN_STANDARD_H
 # define NOT_IN_STANDARD_H
 
-# include <stdlib.h>
 # include <limits.h>
+# include <stdlib.h>
 # include <unistd.h>
 
 char	*ft_itoa(int n);
@@ -28,6 +28,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-void    ft_swap (int *a, int *b);
+void	ft_swap(int *a, int *b);
 
 #endif
