@@ -30,5 +30,9 @@ int		ft_strncmp(const char *src, char *dest, size_t n);
 char	*ft_strnstr(const char *src, const char *search, size_t len);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_str_remove_dup(char *str, char c);
+char	*ft_substr_replace(char *str, char *old, char *new);
+char	*ft_substr_insert(char *str, int pos, int clear, char *sub);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
